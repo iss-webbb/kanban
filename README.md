@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 # Quote / Proposal Builder
 
 A multi-step form that collects client info and generates a proposal. Built with React and TypeScript.
 
 ## Tech Stack
 - React
-- TypeScript
+- javascript
 - Vite
 
 ## Getting Started
@@ -16,6 +15,3 @@ npm run dev
 
 ## Status
 Work in progress.
-=======
-
->>>>>>> 36e3b00601b2ece6396c8817e14f141b92bf0e48
