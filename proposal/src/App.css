@@ -4,6 +4,10 @@
     min-height: 100vh;
 }
 
+li {
+    list-style-type: style; 
+}
+
 .inp {
     border-radius: 8px;
     width: 100%;
@@ -13,7 +17,7 @@
     padding: 5px;
 }
 
-.btn {
+button{
     display: flex;
     margin-top: 20px;
     border-radius: 8px;

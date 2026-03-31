@@ -105,7 +105,7 @@ const App = () => {
                 service: {item.service} <br />
                 Quantity: {item.quant} <br />
                 Price: {item.price}
-                <button onClick={() => setPress(press.filter((item, i) => i !== index ))}>Delete</button>
+                <button style={{backgroundColor: "blue"}} onClick={() => setPress(press.filter((item, i) => i !== index ))}>Delete</button>
               </li>
             ))}
           </ul>
