@@ -1,38 +1,41 @@
-Here's a README for your Kanban project:
+🗂️ Sales Pipeline / Kanban CRM Board
+A React-based CRM Kanban board for managing sales leads across pipeline stages with drag and drop support.
+Features
 
----
+📋 Pipeline Columns — Leads, Contacted, In Progress, Proposal Sent, Closed
+➕ Add Leads — Form with name, title, company, deal value, priority, due date and assignee
+🔀 Drag & Drop — Move cards between columns using dnd-kit
+✏️ Edit Leads — Edit existing cards via modal
+🗑️ Delete Leads — Remove leads from the pipeline
+🔍 Search — Filter leads by priority
+📊 Pipeline Stats — Total leads, total pipeline value, win rate
+💾 Persistent Storage — All data saved to localStorage
 
-# Kanban CRM Board
+Tech Stack
 
-A CRM-style Kanban board built with React for managing leads through a sales pipeline.
+React
+dnd-kit
+localStorage
+CSS
+Vite
 
-## Features
-
-- 5-column pipeline: Leads → Contacted → In Progress → Proposal Sent → Closed Won
-- Add new leads with title, company, deal value, priority, due date, and assignee
-- Drag and drop cards between columns
-- Click Edit on any card to update details via modal
-- Search and filter cards by priority
-- Pipeline summary: Total Leads, Total Pipeline Value, Win Rate
-- Data persists with localStorage
-
-## Tech Stack
-
-- React
-- dnd-kit (drag and drop)
-- localStorage for persistence
-
-## How to Run
-
-```bash
+Getting Started
+bashgit clone https://github.com/iss-webbb/kanban.git
+cd kanban-crm
 npm install
 npm run dev
-```
+Hardest Challenges
 
-## What I Learned
+Wiring drag and drop with column-based state updates
+Building a clean custom hook with action functions instead of raw setters
+Managing modal state and editingId across multiple components
+Fixing prop drilling after component splitting during Refactor 2
 
-- Single state object pattern
-- Drag and drop with dnd-kit (DndContext, useDraggable, useDroppable)
-- Derived state for search filtering
-- Modal edit pattern with editingId
-- localStorage save/load with loaded flag patterngit
+Lessons Learned
+
+Custom hooks should expose actions not raw setters
+useMemo and useCallback prevent unnecessary re-renders
+Refactoring reveals problems that were always hidden in the original code
+
+Live Demo: 
+https://kanban-kohl-five.vercel.app/
