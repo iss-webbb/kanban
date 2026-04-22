@@ -6,6 +6,7 @@ import Modal from "./components/Modal";
 import Proposal from "./components/Proposal";
 import CustomerInfo from "./components/CustomerInfo";
 import Closed from "./components/Closed";
+import Contact from "./components/Contact.jsx";
 
 const App = () => {
   const {
@@ -56,6 +57,12 @@ const App = () => {
           setSearch={setSearch}
         />
         <Leads
+          filteredItems={filteredItems}
+          openEditModal={openEditModal}
+          deleteCard={deleteCard}
+          moveCard={moveCard}
+        />
+        <Contact
           filteredItems={filteredItems}
           openEditModal={openEditModal}
           deleteCard={deleteCard}
