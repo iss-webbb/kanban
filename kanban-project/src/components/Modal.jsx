@@ -1,6 +1,12 @@
 import React from "react";
 
-const Modal = ({ formInfo, setFormInfo, editingId, updateCard, closeModal }) => {
+const Modal = ({
+  formInfo,
+  setFormInfo,
+  editingId,
+  updateCard,
+  closeModal,
+}) => {
   return (
     <div>
       <div className="modal">
@@ -73,7 +79,7 @@ const Modal = ({ formInfo, setFormInfo, editingId, updateCard, closeModal }) => 
 
           <button
             onClick={() => {
-              updateCard(editingId)
+              updateCard(editingId);
             }}
           >
             Submit

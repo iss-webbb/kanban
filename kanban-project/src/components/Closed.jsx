@@ -1,6 +1,6 @@
 import React from "react";
-import Column from "./column";
-import Card from "./card";
+import Column from "./Column";
+import Card from "./Card";
 
 const Closed = ({openEditModal, deleteCard, filteredItems, setEditingId}) => {
   return (
